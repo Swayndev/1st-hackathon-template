@@ -1,0 +1,166 @@
+// Variables  
+$bg-color1: rgba(87, 87, 250, 0.74);
+$bg-color2: rgba(87, 190, 87, 0.856);
+$bg-color3: rgba(253, 253, 66, 0.87);
+
+$fs1: 1rem;
+
+// Mixins
+
+
+// Default web page
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+
+}
+
+// Media queries#
+
+//  @media screen and (max-width: 768px) {
+//  }
+
+//   @media (min-width: 768px) and (max-width: 1200px) {
+//   }
+
+
+.nav {
+    background-color:rgba(17, 16, 16, 0.932) ;
+    color: white;
+
+    height: 14vh;
+    position: fixed;
+    
+    display: flex;
+    justify-content: flex-end;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &__logo {
+        height: 80%;
+        position: absolute;
+
+        font-size: 1.4rem ;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+        left: 1rem;
+
+        
+    }
+    
+   
+    &__container {
+        width: 60%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        margin: 0.5rem;
+        padding: 1rem;
+
+        border: 0.1rem solid white;
+        border-radius: 10px;
+        
+        li {
+            list-style: none;
+        }
+    }
+
+    &__item {
+        color: white;
+        text-decoration: none;
+        
+        padding: 1.5rem 1.5rem;
+
+        border: 0.1rem solid orange;
+    }
+}
+
+.banner {
+    height: 120vh;
+    max-height: fit-content;
+    
+    color: white;
+    background-image: url("../img/wood-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+
+    &__headline {
+    text-align: center;
+
+    margin: 1.2rem;
+    
+    }
+}
+
+
+// Footer
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    height: 25vh;
+}
+
+.social__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social__link {
+    margin: 0 2rem;
+
+    svg {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+
+        path {
+            fill: #f0f0f0;
+            opacity: 0.5;
+        }
+    }
+
+    &:hover {
+        svg {
+            path {
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+.footer__copy {
+    text-align: center;
+    margin-bottom: 2rem;
+}
